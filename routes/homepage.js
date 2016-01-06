@@ -13,9 +13,9 @@ router.get('/', function(req, res){
 })
 /* GET home page. */
 router.get('/homepage', function(req, res, next) {
-var data = siteData;
-data.user = req.user;
-res.render('homepage', data);
+// var data = siteData;
+// data.user = req.user;
+// res.render('homepage', data);
 res.render('homepage', {'content-type': 'text/html'});
 });
 
